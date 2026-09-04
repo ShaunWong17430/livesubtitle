@@ -1,0 +1,8 @@
+﻿id,yourid
+apiKey,apiKey
+apiHost,apiHost
+openAiCompatible,https://ws-workspaceId.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+dashScope,https://ws-workspaceId.cn-beijing.maas.aliyuncs.com/api/v1
+description,Livesubtitle
+workspaceName,默认业务空间
+workspaceId,workspaceId

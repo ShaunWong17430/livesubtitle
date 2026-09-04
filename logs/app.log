@@ -1,0 +1,518 @@
+21:58:51 INFO    [gui] === GUI 启动 ===
+21:58:53 INFO    [hotkeys] RegisterHotKey id=1 key=Ctrl+Alt+S -> OK
+21:58:53 INFO    [hotkeys] RegisterHotKey id=2 key=Ctrl+Alt+E -> OK
+21:58:53 INFO    [hotkeys] RegisterHotKey id=3 key=Ctrl+Alt+L -> OK
+21:58:53 INFO    [hotkeys] RegisterHotKey id=4 key=Ctrl+Alt+W -> OK
+21:58:53 INFO    [tray] 系统托盘已启动
+21:59:19 INFO    [controller] 采集会话启动 remote_idx=16 self_idx=1 tgt=zh
+21:59:19 INFO    [controller] 已连接并开始实时翻译（远端[16] 耳机 (2- W20 dongle) [Loopback] / 自己[1] 麦克风 (2- W20 dongle)）
+21:59:20 INFO    [session] VAD started ms=0 item=item_APZloYd2hkyhAb4LlVRyH last_sp=?
+21:59:20 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Don
+21:59:20 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Don't
+21:59:20 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Don't you
+21:59:20 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Don't you hear
+21:59:20 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Don't you hear?
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about?
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position
+21:59:21 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position?
+21:59:22 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open
+21:59:22 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with
+21:59:22 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our
+21:59:22 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company
+21:59:22 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company?
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:24 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:26 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:26 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:26 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:26 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:28 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:28 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:28 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:28 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:28 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] audio.push sp_dist={'remote': 300} segs=300
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:30 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:32 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:34 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:34 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:34 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:34 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:34 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:36 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:38 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] audio.push sp_dist={'remote': 600} segs=600
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:40 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:42 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:44 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:46 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:48 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] audio.push sp_dist={'remote': 900} segs=900
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:50 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:52 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:54 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:54 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:54 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:54 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:56 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:57 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:57 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:57 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:58 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:58 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] asr.partial item=item_APZloYd2hkyhAb4LlVRyH sp=?: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] majority win=remote counts={'remote': 619879} window=0..619879
+21:59:59 INFO    [session] FINALIZE item=item_APZloYd2hkyhAb4LlVRyH sp=remote asr_done=True trans_done=True asr=Did you hear about the position open with our comp
+21:59:59 INFO    [session] asr.completed item=item_APZloYd2hkyhAb4LlVRyH sp=remote: Did you hear about the position open with our company here a
+21:59:59 INFO    [session] majority win=remote counts={'remote': 608256} window=0..608256
+21:59:59 INFO    [session] VAD stopped ms=38016 item=item_APZloYd2hkyhAb4LlVRyH majority_sp=remote segments=1166
+21:59:59 INFO    [session] VAD started ms=38016 item=item_WPc7tiRYGYxosQRZirpr7 last_sp=remote
+21:59:59 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great
+21:59:59 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great.
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great,
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you.
+22:00:00 INFO    [session] audio.push sp_dist={'remote': 1200} segs=1200
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well,
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an interest
+22:00:00 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an interest.
+22:00:02 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an interest in
+22:00:02 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an interest in outdoor
+22:00:02 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well, you say you have an interest in outdoor.
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor
+22:00:04 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:05 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:05 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:05 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:05 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:06 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:08 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] audio.push sp_dist={'remote': 1500} segs=1500
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:10 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:12 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:13 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:13 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:14 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:16 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:17 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:17 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:18 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:19 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] audio.push sp_dist={'remote': 1800} segs=1800
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:20 INFO    [session] asr.partial item=item_WPc7tiRYGYxosQRZirpr7 sp=remote: Great, well you say you have an interest in outdoor activiti
+22:00:21 WARNING [controller] 音频发送失败：ConnectionError('会话未连接')，标记断线等待重连
+22:00:21 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:00:27 INFO    [session] FINALIZE item=item_WPc7tiRYGYxosQRZirpr7 sp=remote asr_done=True trans_done=False asr=Great, well you say you have an interest in outdoo
+22:00:28 INFO    [controller] 重连成功，继续记录
+22:00:28 INFO    [session] VAD started ms=0 item=item_DGwJFM9VaJmiGHyaIal1f last_sp=?
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: Two.
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is
+22:00:28 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is.
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one
+22:00:29 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one.
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 INFO    [session] asr.partial item=item_DGwJFM9VaJmiGHyaIal1f sp=?: That your company is consistently ranked among the top one h
+22:00:31 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:00:37 INFO    [session] majority win=remote counts={'remote': 103402} window=0..103402
+22:00:37 INFO    [session] FINALIZE item=item_DGwJFM9VaJmiGHyaIal1f sp=remote asr_done=True trans_done=False asr=That your company is consistently ranked among the
+22:00:37 INFO    [controller] 重连成功，继续记录
+22:00:37 INFO    [session] audio.push sp_dist={'remote': 62} segs=62
+22:00:37 INFO    [session] VAD started ms=0 item=item_IxDuOcZtXmvd4s9485q6X last_sp=?
+22:00:37 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: As
+22:00:37 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: As that
+22:00:37 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: As that.
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place to
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place to be
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place to be.
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place to be. Great
+22:00:38 INFO    [session] asr.partial item=item_IxDuOcZtXmvd4s9485q6X sp=?: That level of success would be a good place to be. Great.
+22:00:38 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:00:44 INFO    [session] majority win=remote counts={'remote': 69290} window=0..69290
+22:00:44 INFO    [session] FINALIZE item=item_IxDuOcZtXmvd4s9485q6X sp=remote asr_done=True trans_done=False asr=That level of success would be a good place to be.
+22:00:44 INFO    [controller] 重连成功，继续记录
+22:00:44 INFO    [session] VAD started ms=0 item=item_SeDWdjmPYQHmJCK2O97Rb last_sp=?
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: It
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: It's
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: It's.
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Part
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here with
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here with an
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here with an.
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:45 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:47 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] audio.push sp_dist={'remote': 232} segs=232
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 INFO    [session] asr.partial item=item_SeDWdjmPYQHmJCK2O97Rb sp=?: Particular position here within our customer service departm
+22:00:49 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:00:55 INFO    [session] majority win=remote counts={'remote': 136448} window=0..136448
+22:00:55 INFO    [session] FINALIZE item=item_SeDWdjmPYQHmJCK2O97Rb sp=remote asr_done=True trans_done=False asr=Particular position here within our customer servi
+22:00:55 INFO    [controller] 重连成功，继续记录
+22:00:56 INFO    [session] VAD started ms=0 item=item_Wyp3ATFQFDLLSJaulJnt4 last_sp=?
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Inter
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting.
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:56 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:57 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:57 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:57 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 INFO    [session] asr.partial item=item_Wyp3ATFQFDLLSJaulJnt4 sp=?: Interacting with the customers all the way up throughout the
+22:00:59 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:01:05 INFO    [session] majority win=remote counts={'remote': 105534} window=0..105534
+22:01:05 INFO    [session] FINALIZE item=item_Wyp3ATFQFDLLSJaulJnt4 sp=remote asr_done=True trans_done=False asr=Interacting with the customers all the way up thro
+22:01:05 INFO    [controller] 重连成功，继续记录
+22:01:05 INFO    [session] audio.push sp_dist={'remote': 78} segs=78
+22:01:05 INFO    [session] VAD started ms=0 item=item_D66iL9jXbfXxDibZwjN3R last_sp=?
+22:01:05 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer
+22:01:05 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer.
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service.
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought it
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought it aligned
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought it aligned very
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought it aligned very.
+22:01:06 INFO    [session] asr.partial item=item_D66iL9jXbfXxDibZwjN3R sp=?: Customer service. I thought it aligned very well
+22:01:06 WARNING [controller] 音频发送失败：ConnectionError('会话未连接')，标记断线等待重连
+22:01:06 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:01:12 INFO    [session] majority win=remote counts={'remote': 71955} window=0..71955
+22:01:12 INFO    [session] FINALIZE item=item_D66iL9jXbfXxDibZwjN3R sp=remote asr_done=True trans_done=False asr=Customer service. I thought it aligned very well
+22:01:12 INFO    [controller] 重连成功，继续记录
+22:01:13 INFO    [session] VAD started ms=0 item=item_Xq4dT396RGShGZQGSPpNL last_sp=?
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell?
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:13 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:14 INFO    [session] asr.partial item=item_Xq4dT396RGShGZQGSPpNL sp=?: Can you tell me a little bit more about these skills that yo
+22:01:15 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:01:21 INFO    [session] majority win=remote counts={'remote': 99671} window=0..99671
+22:01:21 INFO    [session] FINALIZE item=item_Xq4dT396RGShGZQGSPpNL sp=remote asr_done=True trans_done=False asr=Can you tell me a little bit more about these skil
+22:01:21 INFO    [controller] 重连成功，继续记录
+22:01:21 INFO    [session] audio.push sp_dist={'remote': 56} segs=56
+22:01:22 INFO    [session] VAD started ms=0 item=item_IqjX5hzUyHeqQ72MoNZrs last_sp=?
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Je
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Je me
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Je me re
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Je me re.
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and
+22:01:22 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and.
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them.
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:23 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:25 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 INFO    [session] asr.partial item=item_IqjX5hzUyHeqQ72MoNZrs sp=?: Or student feel comfortable and help them. I feel that withi
+22:01:27 WARNING [controller] 断线：连接被服务端/网络关闭（长连接重置），6s 后重连…
+22:01:33 INFO    [session] majority win=remote counts={'remote': 140712} window=0..140712
+22:01:33 INFO    [session] FINALIZE item=item_IqjX5hzUyHeqQ72MoNZrs sp=remote asr_done=True trans_done=False asr=Or student feel comfortable and help them. I feel 
+22:01:33 INFO    [controller] 重连成功，继续记录
+22:01:33 INFO    [session] audio.push sp_dist={'remote': 92} segs=92
+22:01:33 INFO    [session] VAD started ms=0 item=item_ZlsxoYSBhrB8N3fVCT9x4 last_sp=?
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: And
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: And what
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: And what I
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: And what I.
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport
+22:01:33 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen to
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen to be
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen to be participating
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen to be participating in
+22:01:34 INFO    [session] asr.partial item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=?: In whatever sport they happen to be participating in.
+22:01:36 INFO    [session] majority win=remote counts={'remote': 94341} window=0..94341
+22:01:36 INFO    [session] FINALIZE item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=remote asr_done=True trans_done=False asr=In whatever sport they happen to be participating 
+22:01:46 INFO    [session] asr.completed item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=remote: In whatever sport they happen to be participating in. Why do
+22:01:46 INFO    [session] FINALIZE item=item_ZlsxoYSBhrB8N3fVCT9x4 sp=remote asr_done=True trans_done=True asr=In whatever sport they happen to be participating 
+22:01:46 INFO    [session] majority win=remote counts={'remote': 119920} window=0..119920
+22:01:46 INFO    [session] VAD stopped ms=7495 item=item_ZlsxoYSBhrB8N3fVCT9x4 majority_sp=remote segments=225
+22:01:46 INFO    [controller] 会话已停止（正常停止或异常退出）

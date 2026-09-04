@@ -1,0 +1,54 @@
+{
+  "cred_path": "",
+  "remote_idx": 16,
+  "self_idx": 1,
+  "tgt": "zh",
+  "model": "qwen3.5-livetranslate-flash-realtime",
+  "vad_threshold": 0.2,
+  "silence_threshold": 0.02,
+  "silence_ms": 1500,
+  "force_finalize_after": 2.0,
+  "self_muted": true,
+  "session_minutes": 30,
+  "dry_run": false,
+  "dry_fail_every": 0,
+  "dry_mem_report_min": 10,
+  "sub_pos": [
+    1551,
+    271
+  ],
+  "sub_opacity": 1.0,
+  "sub_bg_alpha": 255,
+  "sub_ontop": true,
+  "sub_clickthrough": false,
+  "sub_width": 720,
+  "sub_rows": 2,
+  "sub_contrast": 0,
+  "sub_font_pt": 19,
+  "trans_pt_gap": 2,
+  "ctl_pos": null,
+  "ctl_ontop": true,
+  "recent_n": 30,
+  "hotkey_scheme": {
+    "toggle_run": {
+      "vk": "S",
+      "ctrl": true,
+      "alt": true
+    },
+    "export": {
+      "vk": "E",
+      "ctrl": true,
+      "alt": true
+    },
+    "toggle_lang": {
+      "vk": "L",
+      "ctrl": true,
+      "alt": true
+    },
+    "toggle_sub": {
+      "vk": "W",
+      "ctrl": true,
+      "alt": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+17:08:14 INFO    [gui] === GUI ���� ===
+17:08:15 INFO    [hotkeys] RegisterHotKey id=1 key=Ctrl+Alt+S -> FAIL
+17:08:15 INFO    [hotkeys] RegisterHotKey id=2 key=Ctrl+Alt+E -> FAIL
+17:08:15 INFO    [hotkeys] RegisterHotKey id=3 key=Ctrl+Alt+L -> FAIL
+17:08:15 INFO    [hotkeys] RegisterHotKey id=4 key=Ctrl+Alt+W -> FAIL
+17:08:15 WARNING [gui] �ȼ�ע��ʧ��: Ctrl+Alt+S(��ʼ/��ͣ) Ctrl+Alt+E(����) Ctrl+Alt+L(����) Ctrl+Alt+W(��Ļ)
+17:08:15 INFO    [tray] ϵͳ����������

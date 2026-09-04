@@ -1,0 +1,46 @@
+# ============================================================
+# 中英双语实时会议字幕工具 · Python 依赖清单
+# 验证环境：Python 3.10.21（uv构建, Windows 10/11 x64）
+# 迁移用法：
+# 安装 uv
+#    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+# 重启命令行，将uv加入path
+#    set Path=C:\Users\YourUserName\.local\bin;%Path%   (cmd)
+#    $env:Path = "C:\Users\YourUserName\.local\bin;$env:Path"   (powershell)
+# 进入拷过来的项目目录，如：
+#    cd E:/LiveSubtitle
+# 重建环境（自动下载 3.10 + 按锁文件装包）
+#    uv venv --python 3.10 --relocatable
+#    uv sync
+# ============================================================
+
+# --- 运行时核心依赖（GUI + 命令行 + A5 长跑 都需要）---
+
+# 音频采集 / 重采样（numpy 2.x 匹配当前环境）
+numpy==2.2.6
+
+# Windows WASAPI Loopback 采集（两路：远端扬声器回流 + 麦克风）。
+# 注意：这就是 PyAudio 的补丁版，自带补丁，**无需单独安装 pyaudio**。
+PyAudioWPatch==0.2.12.8
+
+# 百炼 realtime 的 WebSocket 客户端
+websocket-client==1.9.2
+
+# 桌面 GUI（控制窗 + 字幕浮窗）。6.x 自带 Qt6 二进制（PyQt6-Qt6）。
+PyQt6==6.11.0
+
+# 系统托盘（pystray）
+pystray==0.19.5
+
+# 托盘图标程序化生成（pystray 依赖）
+Pillow==12.3.0
+
+#提供时区数据
+tzdata>=2026.3
+
+# --- 可选：仅 poc/ 旧诊断脚本用到（主线 GUI/CLI 不依赖）---
+# sounddevice==0.5.6   # 仅 poc0b_loopback.py / _probe_*.py 等早期 PoC 用；主线已切 PyAudioWPatch
+
+# --- 平台说明 ---
+# - pyaudiowpatch 仅支持 Windows（依赖 WASAPI loopback）
+# - 本项目不依赖 tkinter / PySide6；勿混装 PyQt5/PySide6 以免冲突
