@@ -1,23 +1,4 @@
-# 安装 uv
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-# 重启命令行，将uv加入path
-    set Path=C:\Users\YourUserName\.local\bin;%Path%   (cmd)
-    $env:Path = "C:\Users\YourUserName\.local\bin;$env:Path"   (powershell)
-
-# 进入拷过来的项目目录，如：
-cd E:/LiveSubtitle
-
-# 重建环境（自动下载 3.10 + 按锁文件装包）
-uv venv --python 3.10 --relocatable
-uv sync
-
-# 验证
-.venv\python.exe -c "import numpy; print('OK', numpy.__version__)"
-
----
-
-# 中英双语实时会议字幕工具（Teams 会议记录）
+# 中英双语实时会议字幕工具
 
 个人自用工具：在 Microsoft Teams 会议（或其他需要"听远端+记录自己"的场景）中，实时抓取系统音频，调用阿里云百炼 `qwen3.5-livetranslate-flash-realtime` 生成**中英双语字幕**，半透明置顶悬浮显示；会议结束可导出会议记录（`.md` / `.srt` / `.txt`）。
 
@@ -26,6 +7,19 @@ uv sync
 > ⚠️ **Teams 限制说明**：经实测，Windows WASAPI Loopback 无法捕获 Teams 播放的声音（Teams 已知拦截系统 loopback）。本工具可正常捕获浏览器/播放器/系统输出的声音；**Teams 场景需按下方"搭配方案"使用**（双机/扬声器输出到可捕获端点）。
 
 ---
+## 零、配置python环境，如果使用其他环境可以根据requirements.txt安装依赖
+```
+# 安装 uv
+#    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+# 重启命令行，将uv加入path
+#    set Path=C:\Users\YourUserName\.local\bin;%Path%   (cmd)
+#    $env:Path = "C:\Users\YourUserName\.local\bin;$env:Path"   (powershell)
+# 进入拷过来的项目目录，如：
+#    cd E:/LiveSubtitle
+# 重建环境（自动下载 3.10 + 按锁文件装包）
+#    uv venv --python 3.10 --relocatable
+#    uv sync
+```
 
 ## 一、快速开始（三步）
 
@@ -45,7 +39,7 @@ CSV 里**必须包含**的字段（只需前两个即可）：
 
 ### 第 2 步：双击启动
 
-双击 **`start.bat`**（或在项目根运行 `pyforsub\python.exe -m src.gui.main`）。
+双击 **`start.bat`**（或在项目根运行 `uv run python -m src.gui.main`）。
 
 会弹出两个窗口：
 - **控制窗**（设置/开始/停止/回看，关闭它即退出程序）
@@ -171,7 +165,7 @@ GUI 显示的是服务端会话累计 token（与百炼控制台账单同口径�
 `sub_clickthrough` 开着时鼠标穿透。关闭穿透即可拖动。
 
 **Q5：文件夹整体移动后还能用吗？**
-能。所有路径都按 `__file__` 相对推导，解释器 `pyforsub\python.exe` 也在文件夹内。移走后到新位置双击 `start.bat` 即可（凭据 CSV 也放回项目根）。
+能。所有路径都按 `__file__` 相对推导。移走后到新位置双击 `start.bat` 即可（凭据 CSV 也放回项目根）。
 
 **Q6：改模型怎么改？**
 编辑 `config/gui.json` 的 `"model"`，重启 GUI。模型必须为百炼 realtime 兼容模型（默认 `qwen3.5-livetranslate-flash-realtime`）。
@@ -198,7 +192,7 @@ dsh_subtitle/
 ├─ config/gui.json        运行配置（自动生成）
 ├─ sessions/*.jsonl       会议逐轮实时落盘
 ├─ logs/app.log           运行日志
-├─ 默认业务空间-apiKey-*.csv  你的凭据（放项目根即可）
+├─ apiKey-*.csv  你的凭据（阿里云下载，放项目根即可，名称会自动识别）
 ├─ src/
 │  ├─ gui/                PyQt6 桌面 GUI（main/controller/control_window/subtitle_window/tray/hotkeys/…）
 │  ├─ audio/              两路采集（远端 loopback + 麦克风）
