@@ -243,9 +243,10 @@ class App:
         rows.append(row)
         self._recent_rows = rows[-self._cfg.get("sub_rows", 3):]
         self.sub.set_rows(self._recent_rows)
-        # 仅首次定稿追加回看；译文更新轮（同一 uid 已在 log）只刷新字幕不重复回看行
-        if not existing and turn.speaker is not None:
-            self.ctl.append_final(turn.speaker, turn.abs_start, turn.asr_final, turn.trans_final)
+        # 仅首次定稿追加回看；译文更新轮（同一 uid 已在 log）按 uid 原地刷新译文，
+        # 避免回看行停留在"只有英文"（2026-09-05 修复）。
+        self.ctl.append_final(turn.speaker, turn.abs_start, turn.asr_final,
+                              turn.trans_final, uid=turn.user_item_id)
 
     @staticmethod
     def _turn_to_row(turn):
@@ -353,6 +354,7 @@ class App:
         self._recent_rows = []
         self.sub.set_rows([])
         self.ctl.update_final_view([])
+        self.ctl.reset_recent_log()
         self.ctl.set_status("已清空（落盘 .jsonl 仍保留）")
 
     def _export(self, path, fmt):
