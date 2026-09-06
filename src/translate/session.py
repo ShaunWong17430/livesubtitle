@@ -227,15 +227,24 @@ class RealtimeSession:
         elif t == "conversation.item.input_audio_transcription.completed":
             turn = self._ensure_turn(msg.get("item_id"))
             if turn:
-                turn.asr_final = msg.get("transcript") or ""
+                new_asr = msg.get("transcript") or ""
+                asr_changed = (new_asr != turn.asr_final)
+                turn.asr_final = new_asr
                 turn.asr_done = True
                 if msg.get("language"):
                     turn.src_lang = msg["language"]
                 self._set_speaker(turn)
                 self._emit_partial(turn)
-                self._maybe_finalize(turn)
-                _LOG.info("asr.completed item=%s sp=%s: %.60s",
-                          turn.user_item_id, turn.speaker, turn.asr_final)
+                if turn.finalized:
+                    # 已按 partial 强制定稿（force_finalize），服务端最终转录晚到：
+                    # asr_final 被覆盖成完整句 → 必须重发 on_final，让 WAL/回看同步最终原文
+                    # （否则 WAL 停留在截断版，恢复后原文不完整）。
+                    if asr_changed:
+                        self._finalize(turn)
+                else:
+                    self._maybe_finalize(turn)
+                _LOG.info("asr.completed item=%s sp=%s changed=%s: %.60s",
+                          turn.user_item_id, turn.speaker, asr_changed, turn.asr_final)
         elif t in ("response.text.text", "response.audio_transcript.text"):
             turn = self._resolve_turn(msg.get("item_id"))
             if turn and not turn.finalized:
