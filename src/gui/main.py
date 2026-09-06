@@ -36,6 +36,31 @@ from src.store import wal as walmod
 DEFAULT_CSV = os.path.join(_PROJ, "默认业务空间-apiKey-7021723.csv")
 
 
+def _merge_turn(old, new):
+    """同 uid 两次 final 到达时取"更全"版本：new 为权威，但其空字段回填 old，
+    防跨线程残缺快照（asr-only / 译文未达）冲掉旧 turn 已有译文/时间戳。"""
+    from src.translate.events import Turn
+    m = Turn(new.user_item_id)
+    m.asst_item_id = new.asst_item_id or old.asst_item_id
+    m.speaker = new.speaker or old.speaker or "?"
+    m.asr_partial = new.asr_partial or old.asr_partial
+    m.asr_final = new.asr_final or old.asr_final
+    m.asr_done = new.asr_done or old.asr_done
+    m.trans_partial = new.trans_partial or old.trans_partial
+    m.trans_final = new.trans_final or old.trans_final
+    m.trans_done = new.trans_done or old.trans_done
+    m.audio_start_ms = new.audio_start_ms if new.audio_start_ms is not None else old.audio_start_ms
+    m.audio_end_ms = new.audio_end_ms if new.audio_end_ms is not None else old.audio_end_ms
+    m.abs_start = new.abs_start if new.abs_start is not None else old.abs_start
+    m.abs_end = new.abs_end if new.abs_end is not None else old.abs_end
+    m.finalized = new.finalized or old.finalized
+    m.created = new.created or old.created
+    m.src_lang = new.src_lang or old.src_lang
+    m.trans_lang = new.trans_lang or old.trans_lang
+    m.last_partial_ts = new.last_partial_ts or old.last_partial_ts
+    return m
+
+
 class App:
     def __init__(self):
         self._cfg = GCONF.get_all()
@@ -231,9 +256,13 @@ class App:
         existing = [i for i, t in enumerate(self._turn_log)
                     if t.user_item_id == turn.user_item_id]
         if existing:
-            self._turn_log[existing[0]] = turn
+            # 合并而非整体替换（2026-09-05）：跨线程信号里新 turn 可能是残缺快照
+            # （asr-only / trans 尚未到达），不能冲掉旧 turn 已有的译文/完整原文。
+            old = self._turn_log[existing[0]]
+            self._turn_log[existing[0]] = _merge_turn(old, turn)
         else:
             self._turn_log.append(turn)
+        turn = self._turn_log[existing[0]] if existing else turn
         # WAL：每轮定稿立即落盘（F-R1，崩溃不丢已出字幕）。译文补全时同 uid 去重改写。
         if self._wal is not None:
             self._wal.append_turn(turn)
