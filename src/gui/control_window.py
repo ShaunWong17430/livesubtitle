@@ -12,6 +12,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (
     QWidget, QLabel, QPushButton, QComboBox, QHBoxLayout, QVBoxLayout,
     QGridLayout, QGroupBox, QFileDialog, QMessageBox, QListWidget,
+    QListWidgetItem,
     QApplication, QSlider, QCheckBox, QSpinBox, QDoubleSpinBox, QProgressBar,
 )
 
@@ -44,7 +45,8 @@ class ControlWindow(QWidget):
         self._on_self_mute = on_self_mute or (lambda v: None)
         self._on_noise_gate = on_noise_gate or (lambda v: None)
         self._cfg = GCONF.get_all()
-        self._recent_log = []                        # [(speaker, ts, asr, trans)]
+        self._recent_log = []                        # [(uid, speaker, ts, asr, trans)]
+        self._recent_uid_item = {}                   # uid -> QListWidgetItem（译文补全时原地更新）
         self._tgt = self._cfg.get("tgt", "zh")
 
         self.setWindowTitle("会议字幕控制")
@@ -409,8 +411,7 @@ class ControlWindow(QWidget):
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
         if ret == QMessageBox.StandardButton.Yes:
             self._on_clear()
-            self._recent_log = []
-            self.recent_list.clear()
+            self.reset_recent_log()
             self.status_label.setText("已清空")
 
     def _download_clicked(self):
@@ -443,25 +444,64 @@ class ControlWindow(QWidget):
         self._set_style({map_key: val})
 
     # ---------------- 回看 ----
-    def append_final(self, speaker, ts, asr, trans):
+    def append_final(self, speaker, ts, asr, trans, uid=None):
+        """追加/更新一条回看。同 uid 的译文补全轮（trans 后到）→ 原地更新该条目。
+
+        ⚠️ 修复（"回看只有英文"）：ASR 定稿先到（trans 尚空）会先追加一行，
+        译文后到重入时若无 uid 更新，该行永远只有英文。现在按 uid 原地刷新译文，
+        与 turn_log/WAL 的 last-wins 语义保持一致。
+        """
+        if uid:
+            item = self._recent_uid_item.get(uid)
+            if item is not None:
+                # 译文补全（trans 非空）→ 原地更新文本，不新增行
+                if trans:
+                    for i, r in enumerate(self._recent_log):
+                        if r[0] == uid:
+                            self._recent_log[i] = (uid, speaker, ts, asr, trans)
+                            break
+                    item.setText(self._fmt_row(speaker, ts, asr, trans))
+                elif asr and self._recent_log and self._recent_log[-1][0] == uid:
+                    # 纯 ASR 更新且该 uid 已是末行 → 也原地刷新（原文最终版）
+                    self._recent_log[-1] = (uid, speaker, ts, asr, trans)
+                    item.setText(self._fmt_row(speaker, ts, asr, trans))
+                return
         if len(self._recent_log) >= self._cfg.get("recent_n", 30):
-            self._recent_log.pop(0)
-        self._recent_log.append((speaker, ts, asr, trans))
-        from PyQt6.QtWidgets import QListWidgetItem
+            old_uid, _sp, _t, _a, _tr = self._recent_log.pop(0)
+            if old_uid is not None:
+                old_item = self._recent_uid_item.pop(old_uid, None)
+                if old_item is not None:
+                    row = self.recent_list.row(old_item)
+                    self.recent_list.takeItem(row)
+        self._recent_log.append((uid, speaker, ts, asr, trans))
+        item = QListWidgetItem(self._fmt_row(speaker, ts, asr, trans))
+        self.recent_list.addItem(item)
+        if uid:
+            self._recent_uid_item[uid] = item
+        self.recent_list.scrollToBottom()
+
+    @staticmethod
+    def _fmt_row(speaker, ts, asr, trans):
         sp = _speaker_zh(speaker)
         t = exporter.dstr(ts) if ts else "--:--:--"
-        asr_s = asr or "(…)"; trans_s = trans or ""
-        txt = f"[{sp} · {t}] {asr_s}" + (f"\n    {trans_s}" if trans_s else "")
-        item = QListWidgetItem(txt)
-        self.recent_list.addItem(item)
-        self.recent_list.scrollToBottom()
+        asr_s = asr or "(…)"
+        trans_s = trans or ""
+        return f"[{sp} · {t}] {asr_s}" + (f"\n    {trans_s}" if trans_s else "")
 
     def update_final_view(self, turns):
         """用完整 turn_log 重建回看（清空/初始化用）。"""
         self.recent_list.clear()
+        self._recent_uid_item.clear()
         shown = turns[-self._cfg.get("recent_n", 30):]
         for t in shown:
-            self.append_final(t.speaker, t.abs_start, t.asr_final, t.trans_final)
+            self.append_final(t.speaker, t.abs_start, t.asr_final, t.trans_final,
+                              uid=getattr(t, "user_item_id", None))
+
+    def reset_recent_log(self):
+        """清空回看（清空按钮/会话重开：同步清 uid 映射，防孤儿条目）。"""
+        self._recent_log = []
+        self._recent_uid_item = {}
+        self.recent_list.clear()
 
     def _copy_selected(self):
         item = self.recent_list.currentItem()
