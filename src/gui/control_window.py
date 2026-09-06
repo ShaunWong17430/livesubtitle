@@ -454,16 +454,15 @@ class ControlWindow(QWidget):
         if uid:
             item = self._recent_uid_item.get(uid)
             if item is not None:
-                # 译文补全（trans 非空）→ 原地更新文本，不新增行
-                if trans:
-                    for i, r in enumerate(self._recent_log):
-                        if r[0] == uid:
-                            self._recent_log[i] = (uid, speaker, ts, asr, trans)
-                            break
-                    item.setText(self._fmt_row(speaker, ts, asr, trans))
-                elif asr and self._recent_log and self._recent_log[-1][0] == uid:
-                    # 纯 ASR 更新且该 uid 已是末行 → 也原地刷新（原文最终版）
-                    self._recent_log[-1] = (uid, speaker, ts, asr, trans)
+                # 同 uid 重入（译文补全 / asr.completed 晚到 / force 定稿原文刷新）：
+                # 内容有任何变化 → 原地更新文本与该 uid 在 _recent_log 中的记录，不新增行。
+                # （2026-09-05 二次修复：去掉"译文非空/是末行才更新"的限制——只要 uid 行
+                #   已存在就应跟随 turn 的最新内容，避免中间行停留在旧快照。）
+                old = next((r for r in self._recent_log if r[0] == uid), None)
+                if old is None or old[3:] != (asr, trans):
+                    if old is not None:
+                        self._recent_log[self._recent_log.index(old)] = \
+                            (uid, speaker, ts, asr, trans)
                     item.setText(self._fmt_row(speaker, ts, asr, trans))
                 return
         if len(self._recent_log) >= self._cfg.get("recent_n", 30):
