@@ -247,11 +247,27 @@ class RealtimeSession:
                           turn.user_item_id, turn.speaker, asr_changed, turn.asr_final)
         elif t in ("response.text.text", "response.audio_transcript.text"):
             turn = self._resolve_turn(msg.get("item_id"))
-            if turn and not turn.finalized:
+            if turn:
+                # 即使已 finalized（ASR 先定稿）也更新 trans_partial：
+                # 译文增量在这之后到达时不该丢弃——用户字幕窗已显示 partial，
+                # 若丢弃则 done 永不到时该 partial 译文在中途丢失（断线场景实测）。
                 turn.trans_partial = text_plus_stash(msg)
                 if msg.get("language"):
                     turn.trans_lang = msg["language"]
                 self._emit_partial(turn)
+                # 若轮已定稿且 trans_final 尚空，可先用 partial 顶为最终译文（保底），
+                # 让回看/WAL 不丢用户已看到的内容；done 后到会覆盖。
+                if turn.finalized and not turn.trans_final and turn.trans_partial:
+                    turn.trans_final = turn.trans_partial
+                    turn.trans_done = True
+                    self._finalize(turn)
+                    _LOG.info("trans.text 补 finalized 轮 partial 译文 asr=%s: %.60s",
+                              turn.user_item_id, turn.trans_final)
+                _LOG.info("trans.text item=%s asr=%s: %.60s",
+                          msg.get("item_id"), turn.user_item_id, turn.trans_partial)
+            elif turn is None:
+                _LOG.warning("trans.text 丢弃（resolve 不到 asr，可能是断线后 assistant_map 被清空）asst=%s",
+                             msg.get("item_id"))
         elif t in ("response.text.done", "response.audio_transcript.done"):
             turn = self._resolve_turn(msg.get("item_id"))
             if turn:
@@ -262,6 +278,11 @@ class RealtimeSession:
                     self._finalize(turn)
                 else:
                     self._maybe_finalize(turn)
+                _LOG.info("trans.done item=%s asr=%s: %.60s",
+                          msg.get("item_id"), turn.user_item_id, turn.trans_final)
+            else:
+                _LOG.warning("trans.done 丢弃（resolve 不到 asr）asst=%s text=%.60s",
+                             msg.get("item_id"), msg.get("text") or "")
         elif t == "response.done":
             usage = (msg.get("response") or {}).get("usage") or {}
             u = usage_total(usage)
@@ -442,6 +463,11 @@ class RealtimeSession:
             if tr.asr_partial and not tr.asr_done and now - tr.last_partial_ts >= force_after:
                 tr.asr_final = tr.asr_partial
                 tr.asr_done = True
+                # 断线/超时强制定稿时，已到达的 partial 译文一并并入最终译文保底
+                # （否则 response.text.done 若后到被丢弃，用户看到的 partial 译文就永久丢失）。
+                if tr.trans_partial and not tr.trans_final:
+                    tr.trans_final = tr.trans_partial
+                    tr.trans_done = True
                 self._finalize(tr)
                 break   # 每次最多强制一轮，避免突发批量（下一轮泵继续）
 
@@ -458,4 +484,9 @@ class RealtimeSession:
             if tr.asr_partial and not tr.asr_done:
                 tr.asr_final = tr.asr_partial
                 tr.asr_done = True
+                # 同 force_finalize_overdue：已到达的 partial 译文并入最终译文保底，
+                # 避免断线窗口丢失用户已在字幕窗看到的译文。
+                if tr.trans_partial and not tr.trans_final:
+                    tr.trans_final = tr.trans_partial
+                    tr.trans_done = True
                 self._finalize(tr)
